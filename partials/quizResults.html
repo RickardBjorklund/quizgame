@@ -1,0 +1,59 @@
+
+<div class="container-fluid contentFull standardBg">
+<br>
+	<div class="row centerText">
+		<div class="col-md-6 col-md-offset-3 centerText" ng-hide="isRoundsResults">
+		  <div id="rcorners2"> 
+		  	<h3>Results!</h3> <br/>
+		    <p><b>This round:</b></p>
+		     <div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" style="width:{{correctPercentage()}}%">
+				    Correct {{correctPercentage()}}%
+				</div>
+				<div class="progress-bar progress-bar-danger" role="progressbar" style="width:{{incorrectPercentage()}}%"> 
+				    Wrong {{incorrectPercentage()}}%
+				</div>
+		  	</div>
+		  	{{status()}}
+		  	<div ng-show="loggedIn">
+		    	<p>	<H3>Total: </h3>  {{totals()}} </p>  <br/>
+		    	Right: {{totalStats[0]}} <br/>
+		    	Wrong: {{totalStats[1]}}
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="row ">
+		<div class="col-md-6 col-md-offset-3 " ng-show="isRoundsResults">
+			<div id="rcorners2">
+				<div class="centerText">
+					<h3> Rounds you've done </h3> 
+				</div>
+				
+				<div ng-repeat="results in answers track by $index">
+					<p class="resultQuestion">Question {{$index+1}}: {{answeredQuestions[$index]}}</p>
+					<p class="resultAnswered">{{results}}</p> 
+				</div>
+			</div>
+		</div>
+	</div>
+		
+
+	<div class="row ">
+		<div class="col-md-6 col-md-offset-3 centerText"> 
+		   <a href="#!/settings" class="btn btn-primary btnLeft">New round!</a>
+		   <button class="btn btn-success" ng-click="roundsResults()" ng-hide="isRoundsResults">View questions</button>
+		   <button class="btn btn-success" ng-click="roundsResults()" ng-show="isRoundsResults">View resultst</button>
+		   <a href="#!/home" class="btn btn-primary btnRight">End quiz</a>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+<div class="standardBg contentFull">
+	{{status()}}
+	<div class="container-fluid">
+		<div class="row" id="startButtons">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="centerText">
+					<h1> Get started! </h1> 
+					<div ng-hide="loggedIn">	
+						<a href="#!/settings" class="btn btn-primary bigButtons">Quickplay</a>
+						<a href="#!/login" class="btn btn-primary bigButtons">Sign in</a>
+					</div>
+					<div ng-show="loggedIn">
+						<a href="#!/settings" class="btn btn-primary bigButtons">Quickplay</a>
+						<a href="#!/profile" class="btn btn-primary bigButtons">Profile</a>
+						<a href="#!/home" class="btn btn-primary bigButtons" ng-click="logOut()">Log out</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

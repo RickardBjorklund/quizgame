@@ -1,0 +1,73 @@
+<div class="contentFull standardBg">	
+	
+	<div class="settingsDiv">
+
+		<div ng-show="isStandard">
+			<div class="col-md-5 col-md-offset-1">
+				<div class="centerText">
+					<p class="setUp">Log in</p>
+				</div>
+
+				<form>
+					<div class="form-group">
+						<label for="email">Email address</label><br>
+						<input class="form-control" id="emailIn" ng-model='emailIn' type="email" placeholder="Email" required>
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label><br>
+						<input class="form-control" id="passwordIn" ng-model='passwordIn' type="password" placeholder="Password" required>
+					</div>
+					<div class="centerText">
+						<a href="#!/settings" class="btn btn-primary hover bigButtons" ng-click="loginUser(emailIn, passwordIn)">Log in</a>
+					</div>
+				</form>
+
+			</div>
+			<div class="col-md-5">	
+
+				<div class="centerText">
+					<p class="setUp">Sign up! </p>
+				</div>
+
+				<form>
+					<div class="form-group">
+						<label for="username">Username</label><br>
+						<input class="form-control" id="newUsername" ng-model='newUsername' type="text" placeholder="Username" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email address</label><br>
+						<input class="form-control" id="newEmail" ng-model='newEmail' type="email" placeholder="Youremail@something.com" required>
+					</div>
+
+					<div class="form-group">
+						<label for="password">Password</label><br>
+						<input class="form-control" id="newPassword" ng-model='newPassword' type="password"  required title="Password (at least 6 characters)" placeholder="Password (at least 6 characters)" required>  <!--pattern=".{6,}"-->
+					</div>
+					<label for="image">Choose profile picture</label><br>
+					<div class="centerText">
+						<label class="radio-inline"><input ng-model='newPicture' type="radio" name="picOpt" value="batman"><img src="images/batman.jpg" class="img-circle small" alt="profile"></label>
+						<label class="radio-inline"><input ng-model='newPicture' type="radio" name="picOpt" value="mario"><img src="images/mario.jpg" class="img-circle small" alt="profile"></label>
+						<label class="radio-inline"><input ng-model='newPicture' type="radio" name="picOpt" value="harley"><img src="images/harley.jpg" class="img-circle small" alt="profile"></label>
+					</div>
+
+
+					<div class="centerText">
+						<a href="" class="btn btn-primary hover bigButtons" ng-click="newUser(newEmail, newPassword, newUsername, newPicture)">Sign up</a>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div ng-show="confirmNewUser" class="col-md-6 col-md-offset-3">
+			<br><br>
+			<div id="rcorners2">
+				<p class="setUp">You have created a user</p>
+				<div class="centerText">
+					<a href="#!/home" class="btn btn-primary hover bigButtons" ng-click="refresh()">Log in to play!</a>
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+</div>

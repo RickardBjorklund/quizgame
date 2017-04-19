@@ -1,0 +1,264 @@
+.standardBg {
+  background-color: #ddebff;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .row {
+  border: 1px dotted grey;
+}
+
+.box .row.header {
+  flex: 0 1 auto;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+}
+
+.box .row.footer {
+  flex: 0 1 40px;
+}
+
+ /* HEADER */
+.header {
+    padding: 10px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-image: url(images/Quizzes1.jpg);
+    background-repeat: no-repeat; 
+/** background-position: center;**/
+    background-attachment: fixed;       
+    background-size: cover; 
+    height: 20vh;
+}
+
+.allContent{                /**/
+    height: 80vh;
+}
+
+.header h1 {
+    color: white;
+    display: inline;
+}
+
+.header h4 {
+    color: white;
+    display: inline;
+}
+
+p.setUp {
+    font-size: 30px;
+}
+
+.setQuestion {
+    font-size: 20px;
+    padding: 20px;
+}
+
+p.resultQuestion {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+p.fancy {
+    font-weight: bold; 
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/*  BACKGROUNDS  */
+
+#loginView {                      /**/
+    width: 100vh;
+    height: 100vh;
+}
+
+body {                      /**/
+    background-color: #ddebff;
+    min-height: 100vh; 
+    height: 100%;
+}
+
+.blueFull {
+    background-color: 
+    height:100vh; 
+}
+
+/* BUTTONS */
+.bigButtons {
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 30px;
+    height: 80px;
+    width: 200px;
+}
+
+.bigAlt {
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 18px;
+    height: 80px;
+    width: 100%;
+}
+
+.small {
+    width: 100px;
+}
+
+/* ALIGNMENT */
+
+.fullPage {
+    height: 100vh;
+}
+
+.contentPadding {
+    padding: 40px;                  /**/
+}
+
+.smallpadd {                  /**/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.progress-smaller {
+    width: 90%;
+}
+
+.answerDiv {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#startButtons {
+    vertical-align: middle;   /* funkar inte */
+    line-height: 50%;
+    margin-top: 160px;
+}
+
+.centerText {
+    text-align: center;
+}
+
+/*.noPaddMar {
+    margin: 0 !important;
+    padding: 0 !important;
+}*/
+
+.settingsDiv {                   /**/
+    margin: 10px;
+}
+
+.input{                   /**/
+    width: 500px;
+}
+
+#signUp {                   /**/
+    margin-left: 30px;
+}
+
+#rcorners2 {
+    border-radius: 25px;
+    border: 0px solid;
+    padding: 10px; 
+    width: 100%;
+    height: 70%;    
+    color: black;
+    text-align: center;
+    background-color: rgba(255,255,255, 0.8);
+}
+
+#fancy {
+    border-radius: 25px;
+    border: 0px;
+    padding: 10px; 
+    width: 100%;
+    height: 70%;    
+    color: black;
+    text-align: center;
+    background-color: rgba(102,204,0, 0.7);
+}
+
+#fancyRed {
+    border-radius: 25px;
+    border: 0px;
+    padding: 10px; 
+    width: 100%;
+    height: 70%;    
+    color: black;
+    text-align: center;
+    background-color: rgba(204,0,0, 0.7);
+}
+
+.btn {                   /**/
+    margin: 10px;
+}
+
+.hover {
+    transition-duration: 0.4s;
+}
+
+ .hover:hover {
+    background-color: #0099ff; /* Blue */
+    color: white;
+}
+
+.btnRed {
+    background-color: rgba(215,84,82, 1) !important;
+}
+
+.btnGreen {
+    background-color: rgba(95,183,96, 1) !important;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.allCenter {
+    text-align: center;
+    align-content: center;
+}
+
+.btnDefault {
+    width: 150px;
+}
+
+.btnRight {
+    float: right; 
+    margin-right: 30px;
+}
+
+.btnLeft {
+    float: left; 
+    margin-left: 30px;
+}
+
+.btnCenter {
+    margin: auto;
+    background-color: rgba(255,255,255, 0.8);
+}
+
+
+
+

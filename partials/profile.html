@@ -1,0 +1,21 @@
+
+<div>
+	<div class="container-fluid col-md-12 textCenter">
+		{{profileInfo()}}
+		<u> <h1>{{list[0]}}</h1> </u> <br/>
+		
+		<img src="images/{{list[1]}}.jpg" class="img-circle" alt="profile">
+
+		<p>	<h3>Total stats: </h3>  {{totals()}} </p> 
+		    	<p class="setQuestion">
+		    	Right: {{totalStats[0]}} <br/>
+		    	Wrong: {{totalStats[1]}}
+		    	</p>
+
+		<a href="#!/settings" class="btn btn-primary hover bigButtons">Start quiz!</a>
+		<a href="#!/home" class="btn btn-primary hover bigButtons" ng-click="logOut()">Log out</a> <br/>
+		
+	</div>
+</div>
+
+
