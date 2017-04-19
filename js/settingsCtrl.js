@@ -4,8 +4,10 @@ quizRApp.controller('SettingsCtrl', function ($scope, Model) {
 
   $scope.createQuizWS = function(category, difficulty) {
   	Model.createQuizWS(category, difficulty);
-    Model.profileInfo();
-    Model.totalStats();
+    if (Model.getStatus){
+      Model.profileInfo();
+      Model.totalStats();
+    }
   	Model.clearAll();
   }
  

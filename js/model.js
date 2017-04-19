@@ -15,11 +15,13 @@ quizRApp.factory('Model',function ($resource) {
   var that = this; 
 
   this.clearAll = function() {
+    //console.log("inne i clearAll")
     quiz = []; 
     correctAnswers = 0; 
     incorrectAnswers = 0; 
     answers = [];
     answeredQuestions = [];
+    //totalList = [];
   }
 
   this.checkStatus = function () {
